@@ -1,5 +1,5 @@
 cask "snorbe-desktop" do
-  version "0.1.1"
+  version "0.1.2"
 
   # NOTE: Private GitHub Releases REQUIRE:
   #   1. api.github.com asset URL (the `/releases/download/...` browser URL
@@ -19,16 +19,16 @@ cask "snorbe-desktop" do
   # Update both IDs and both sha256 values when bumping version.
 
   if Hardware::CPU.arm?
-    sha256 "bda13aaa7254e8921869f759450dbe514c4a36307299d649e06d6577442fc321"
-    url "https://api.github.com/repos/deskrexai/snorbe-app/releases/assets/452662195",
+    sha256 "d99be303d8e65d09c92fcc19fc4f285d59bdbf7b26af24ee51690af9c37effb1"
+    url "https://api.github.com/repos/deskrexai/snorbe-app/releases/assets/452673344",
         verified: "api.github.com/repos/deskrexai/snorbe-app/",
         header: [
           "Accept: application/octet-stream",
           "Authorization: Bearer #{ENV.fetch('HOMEBREW_GITHUB_API_TOKEN', '')}",
         ]
   else
-    sha256 "b40c58603a1fa48058a9c1260291de3d76680d3cb7a60d43d7b1c31db23e0184"
-    url "https://api.github.com/repos/deskrexai/snorbe-app/releases/assets/452662196",
+    sha256 "db216b1b057ea545a950c16dbd4c6387bd56ca4ad955cd8c22d28b1696aa6eba"
+    url "https://api.github.com/repos/deskrexai/snorbe-app/releases/assets/452673345",
         verified: "api.github.com/repos/deskrexai/snorbe-app/",
         header: [
           "Accept: application/octet-stream",

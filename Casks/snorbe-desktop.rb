@@ -1,15 +1,15 @@
 cask "snorbe-desktop" do
-  version "0.1.3"
+  version "0.1.4"
 
   # Public release mirror — no token required, no special headers.
   # See https://github.com/deskrexai/snorbe-desktop-releases for the release
   # process. (Source code remains private at deskrexai/snorbe-app.)
 
   if Hardware::CPU.arm?
-    sha256 "3ed1ce0f78f95ee295dea3e0b2fc5da92a19607309300a64647cea5bf189df72"
+    sha256 "009f8072119e7ae986b7deb60b97b49e56bd36b49ffdce0b624bbef9d0d57df5"
     url "https://github.com/deskrexai/snorbe-desktop-releases/releases/download/desktop-v#{version}/Snorbe.Desktop-#{version}-arm64.dmg"
   else
-    sha256 "7d0064863228162b13f75512097c54fb8912e37efa2a0b5cea643df7cc7238d5"
+    sha256 "9224c4497b6980315cf56774b892e116fac0e7c9ffeda9cccba623303c8c5052"
     url "https://github.com/deskrexai/snorbe-desktop-releases/releases/download/desktop-v#{version}/Snorbe.Desktop-#{version}.dmg"
   end
 
